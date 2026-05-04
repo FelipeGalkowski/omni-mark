@@ -1,4 +1,4 @@
-import type { GrantType } from "@/service/AuthService";
+import type { GrantType } from ".";
 
 // API (snake_case)
 export interface SignInApiDTO {

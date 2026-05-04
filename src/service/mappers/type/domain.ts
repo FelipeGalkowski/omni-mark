@@ -1,4 +1,4 @@
-import type { GrantType } from "../../AuthService";
+import type { GrantType } from ".";
 
 // Domain (camelCase)
 export interface ISignInDTO {

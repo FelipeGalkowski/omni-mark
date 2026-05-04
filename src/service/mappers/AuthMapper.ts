@@ -1,5 +1,4 @@
-import type { ISignInDTO } from "../AuthService";
-import type { SignInApiDTO, SignResponseApi, SignResponse, RefreshTokenDTO, RefreshTokenApiDTO } from "./type";
+import type { SignInApiDTO, SignResponseApi, SignResponse, RefreshTokenDTO, RefreshTokenApiDTO, ISignInDTO } from "./type";
 
 export const AuthMapper = {
   accessToken: {
