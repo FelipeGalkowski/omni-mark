@@ -9,10 +9,16 @@ import {
 } from "@/components/ui/card"
 import { HugeiconsIcon } from "@hugeicons/react"
 import { ChartUpIcon, ChartDownIcon } from "@hugeicons/core-free-icons"
+import { useGetOrdersCount } from "@/hooks/useGetOrders"
+
 
 export function SectionCards() {
+
+const { total } = useGetOrdersCount();
+
+
   return (
-    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-primary/5 
+    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-primary/5
     *:data-[slot=card]:to-card *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-5
     dark:*:data-[slot=card]:bg-card">
       <Card className="@container/card">
@@ -86,7 +92,7 @@ export function SectionCards() {
         <CardHeader>
           <CardDescription>Visitas</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            4.5%
+            45
           </CardTitle>
           <CardAction>
             <Badge variant="outline">
@@ -107,7 +113,7 @@ export function SectionCards() {
         <CardHeader>
           <CardDescription>Quantidade de Vendas</CardDescription>
           <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
-            4.5%
+            {total}
           </CardTitle>
           <CardAction>
             <Badge variant="outline">

@@ -1,10 +1,10 @@
 import { OrdersService } from "@/service/OrdersService";
-import { useQuery } from "@tanstack/react-query"
+import { useQuery } from "@tanstack/react-query";
 
-export function useGetOrders(sellerId: string) {
+export function useGetOrders() {
   const { data } = useQuery({
     queryKey: ["orders"],
-    queryFn: async () => await OrdersService.getOrders(sellerId),
+    queryFn: async () => await OrdersService.getOrders(),
     staleTime: 1 * 60 * 1000
   });
 
@@ -14,10 +14,10 @@ export function useGetOrders(sellerId: string) {
   }
 }
 
-export function useGetOrdersCount(sellerId: string) {
+export function useGetOrdersCount() {
   const { data } = useQuery({
     queryKey: ["orders-count"],
-    queryFn: async () => await OrdersService.getOrdersCount(sellerId),
+    queryFn: async () => await OrdersService.getOrdersCount(),
     staleTime: 1 * 60 * 1000
   });
 
