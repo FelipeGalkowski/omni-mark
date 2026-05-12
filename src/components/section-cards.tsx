@@ -14,8 +14,8 @@ import { useGetOrdersCount } from "@/hooks/useGetOrders"
 
 export function SectionCards() {
 
-const { total } = useGetOrdersCount();
-
+  const { total } = useGetOrdersCount();
+  console.log(`Total de Vendas: ${total}`)
 
   return (
     <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-primary/5

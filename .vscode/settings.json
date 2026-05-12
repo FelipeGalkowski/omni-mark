@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.codeLens": true,
+  "editor.formatOnPaste": true,
+  "eslint.format.enable": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "source.fixAll.ts": "always",
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "always",
+    "source.addMissingImports.ts": "always"
+  }
+}
